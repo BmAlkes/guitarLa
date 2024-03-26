@@ -2,7 +2,7 @@
 
 <p><a href="">Link project</a></p>
 
-<img src="https://github.com/BmAlkes/webcar/blob/main/src/assets/Screenshot_15.png?raw=true"/>
+<img src="https://github.com/BmAlkes/guitarLa/blob/main/src/assets/guitta.png?raw=true"/>
 
 <hr/>
 
