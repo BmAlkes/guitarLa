@@ -1,8 +1,42 @@
-# React + Vite
+<h2>🗄️LinkThrees Project</h2>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p><a href="">Link project</a></p>
 
-Currently, two official plugins are available:
+<img src="https://github.com/BmAlkes/webcar/blob/main/src/assets/Screenshot_15.png?raw=true"/>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<hr/>
+
+<h2>📝 Description</h2>
+<p>Website for selling guitars with cart with states</p>
+
+<hr/>
+
+<h2>📚Functionalities</h2>
+<p>Show guitars with a state cart</p>
+
+  <hr/>
+<h3>🔧
+Technologies used
+Technology</h3>
+
+<p>React, react reducer </p>
+
+<hr/>
+<h2>🚀 Run Projext</h2>
+<p>To run the repository it is necessary to clone it, issue the following command to start the project: </p>
+
+`git init`
+and after
+`npm run dev`
+
+<hr/>
+  
+<h3>🔜 future implementation</h3>
+
+  <hr/>
+<h3>  
+🤝 Colaboradores</h3>
+  
+<img src="https://www.github.com/BmAlkes.png" width="150px"/>
+BmAlkes
+<h2>🎯 Project Status</h2>
