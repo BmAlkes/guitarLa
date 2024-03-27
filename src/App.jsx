@@ -7,8 +7,14 @@ function App() {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
 
+  const getLocalStorage = () => {
+    const cartLocal = JSON.parse(localStorage.getItem("cart"));
+    setCart(cartLocal);
+  };
+
   useEffect(() => {
     setProducts(db);
+    getLocalStorage();
   }, []);
 
   const addToCart = (item) => {

@@ -1,16 +1,33 @@
 import React, { useMemo } from "react";
 
 const Header = ({ cart, setCart }) => {
+  const MIN_ITEM = 1;
+  const MAX_ITEM = 5;
+
   const increaseCart = (id) => {
-    const itemExist = cart.findIndex((product) => product.id === id);
-    if (itemExist >= 0) {
-      const updatedCart = [...cart];
-      updatedCart[itemExist].quantity++;
-      setCart(updatedCart);
-    }
+    const updatedCart = cart.map((product) => {
+      if (product.id === id && product.quantity < MAX_ITEM) {
+        return {
+          ...product,
+          quantity: product.quantity + 1,
+        };
+      }
+      return product;
+    });
+    setCart(updatedCart);
+    saveLocalStorages();
   };
   const decreaseCart = (id) => {
-    console.log("decrease");
+    const updatedCart = cart.map((product) => {
+      if (product.id === id && product.quantity > MIN_ITEM) {
+        return {
+          ...product,
+          quantity: product.quantity - 1,
+        };
+      }
+      return product;
+    });
+    setCart(updatedCart);
   };
   const handleDeleteItem = (id) => {
     const filterCart = cart.filter((item) => item.id !== id);
@@ -26,6 +43,10 @@ const Header = ({ cart, setCart }) => {
   );
   const handleDeleteCart = () => {
     setCart([]);
+  };
+
+  const saveLocalStorages = () => {
+    localStorage.setItem("cart", JSON.stringify(cart));
   };
   return (
     <header className="py-5 header">
