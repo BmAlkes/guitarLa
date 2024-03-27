@@ -2,29 +2,29 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header class="py-5 header">
-      <div class="container-xl">
-        <div class="row justify-content-center justify-content-md-between">
-          <div class="col-8 col-md-3">
+    <header className="py-5 header">
+      <div className="container-xl">
+        <div className="row justify-content-center justify-content-md-between">
+          <div className="col-8 col-md-3">
             <a href="/">
               <img
-                class="img-fluid"
+                className="img-fluid"
                 src="./public/img/logo.svg"
                 alt="imagen logo"
               />
             </a>
           </div>
-          <nav class="col-md-6 a mt-5 d-flex align-items-start justify-content-end">
-            <div class="carrito">
+          <nav className="col-md-6 a mt-5 d-flex align-items-start justify-content-end">
+            <div className="carrito">
               <img
-                class="img-fluid"
+                className="img-fluid"
                 src="./public/img/carrito.png"
                 alt="imagen carrito"
               />
 
-              <div id="carrito" class="bg-white p-3">
-                <p class="text-center">El carrito esta vacio</p>
-                <table class="w-100 table">
+              <div id="carrito" className="bg-white p-3">
+                <p className="text-center">El carrito esta vacio</p>
+                <table className="w-100 table">
                   <thead>
                     <tr>
                       <th>Imagen</th>
@@ -38,24 +38,24 @@ const Header = () => {
                     <tr>
                       <td>
                         <img
-                          class="img-fluid"
+                          className="img-fluid"
                           src="./public/img/guitarra_02.jpg"
                           alt="imagen guitarra"
                         />
                       </td>
                       <td>SRV</td>
-                      <td class="fw-bold">$299</td>
-                      <td class="flex align-items-start gap-4">
-                        <button type="button" class="btn btn-dark">
+                      <td className="fw-bold">$299</td>
+                      <td className="flex align-items-start gap-4">
+                        <button type="button" className="btn btn-dark">
                           -
                         </button>
                         1
-                        <button type="button" class="btn btn-dark">
+                        <button type="button" className="btn btn-dark">
                           +
                         </button>
                       </td>
                       <td>
-                        <button class="btn btn-danger" type="button">
+                        <button className="btn btn-danger" type="button">
                           X
                         </button>
                       </td>
@@ -63,10 +63,10 @@ const Header = () => {
                   </tbody>
                 </table>
 
-                <p class="text-end">
-                  Total pagar: <span class="fw-bold">$899</span>
+                <p className="text-end">
+                  Total pagar: <span className="fw-bold">$899</span>
                 </p>
-                <button class="btn btn-dark w-100 mt-3 p-2">
+                <button className="btn btn-dark w-100 mt-3 p-2">
                   Vaciar Carrito
                 </button>
               </div>
