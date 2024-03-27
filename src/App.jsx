@@ -7,15 +7,15 @@ function App() {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
 
-  const getLocalStorage = () => {
-    const cartLocal = JSON.parse(localStorage.getItem("cart"));
-    setCart(cartLocal);
-  };
-
+  const getLocal = JSON.parse(localStorage.getItem("cart"));
   useEffect(() => {
     setProducts(db);
-    getLocalStorage();
+    setCart(getLocal);
   }, []);
+
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
 
   const addToCart = (item) => {
     const itemExist = cart.findIndex((product) => product.id === item.id);

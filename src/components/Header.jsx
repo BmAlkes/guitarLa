@@ -15,7 +15,6 @@ const Header = ({ cart, setCart }) => {
       return product;
     });
     setCart(updatedCart);
-    saveLocalStorages();
   };
   const decreaseCart = (id) => {
     const updatedCart = cart.map((product) => {
@@ -45,9 +44,6 @@ const Header = ({ cart, setCart }) => {
     setCart([]);
   };
 
-  const saveLocalStorages = () => {
-    localStorage.setItem("cart", JSON.stringify(cart));
-  };
   return (
     <header className="py-5 header">
       <div className="container-xl">
