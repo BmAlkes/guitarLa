@@ -4,13 +4,15 @@ import Header from "./components/Header";
 import { db } from "./db";
 
 function App() {
+  const initialCart = () => {
+    const getLocal = JSON.parse(localStorage.getItem("cart"));
+    return getLocal ? getLocal : [];
+  };
   const [products, setProducts] = useState([]);
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(initialCart);
 
-  const getLocal = JSON.parse(localStorage.getItem("cart"));
   useEffect(() => {
     setProducts(db);
-    setCart(getLocal);
   }, []);
 
   useEffect(() => {
