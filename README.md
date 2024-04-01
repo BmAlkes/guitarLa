@@ -1,4 +1,4 @@
-<h2>🗄️LinkThrees Project</h2>
+<h2>🗄️Cart Shop</h2>
 
 <p><a href="">Link project</a></p>
 
